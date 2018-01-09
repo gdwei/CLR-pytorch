@@ -172,7 +172,7 @@ if __name__=="__main__":
     torch.manual_seed(opt.seed)
     torch.cuda.manual_seed(opt.seed)
 
-    basename = '-'.join(['adaptive-lr', opt.dataset, opt.arch, datetime.now().strftime("%d-%H-%M-%S")])
+    basename = '-'.join(['decay', opt.dataset, opt.arch, datetime.now().strftime("%d-%H-%M-%S")])
     path = os.path.join('log', basename)
     os.mkdir(path)
 
